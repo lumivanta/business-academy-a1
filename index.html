@@ -1,141 +1,1397 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#142b40">
-  <meta name="description" content="Business Academy A1 — independent, research-led business education with a European intellectual outlook.">
-  <title>Business Academy A1 — The Art of Better Business Thinking</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Business Academy A1 — free, independent learning in business, management and strategy, open to everyone.">
+  <meta name="theme-color" content="#101f35">
+  <title>Business Academy A1 — Business Education for Everyone</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
-:root{--navy:#142b40;--navy-deep:#0d2031;--gold:#c6a15b;--gold-pale:#dfc995;--paper:#f4f1e9;--white:#fbfaf6;--ink:#263746;--muted:#697680;--line:#dcd8ce;--serif:"Libre Baskerville",Georgia,serif;--sans:"DM Sans",Arial,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit}.skip-link{position:absolute;left:-9999px;top:8px;background:#fff;padding:10px;z-index:20}.skip-link:focus{left:10px}.masthead-rule{height:8px;background:var(--navy);display:flex}.masthead-rule span{width:78%;background:var(--navy)}.masthead-rule i{width:22%;background:var(--gold)}
-.site-header{height:91px;padding:0 7.4%;display:flex;align-items:center;justify-content:space-between;background:var(--white);border-bottom:1px solid var(--line);position:relative;z-index:5}.identity{display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--navy)}.identity-seal{width:44px;height:44px;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:21px;position:relative}.identity-seal b{font-weight:400}.identity-seal small{font-size:9px;align-self:flex-start;margin:7px 0 0 2px;color:#a77f36}.identity-wordmark strong{display:block;font-size:11px;letter-spacing:1.55px}.identity-wordmark small{display:block;margin-top:5px;color:#858b8e;font-size:8px;letter-spacing:1.8px}.primary-nav{display:flex;gap:29px}.primary-nav a,.header-cta{font-size:10px;text-decoration:none;color:#4d5a63}.primary-nav a{transition:color .2s}.primary-nav a:hover,.header-cta:hover{color:#a47c37}.header-cta{font-weight:700;letter-spacing:.2px}.header-cta span{color:var(--gold);padding-left:7px}.menu-toggle{display:none}
-.hero{min-height:625px;padding:76px 9% 63px;display:grid;grid-template-columns:1.02fr .9fr;gap:7%;align-items:center;background:linear-gradient(112deg,#f7f5ef 0%,#efede5 100%)}.kicker,.section-label{font-size:9px;letter-spacing:2.2px;font-weight:700;color:#98783e;margin:0 0 22px}.kicker-line{display:inline-block;width:25px;height:1px;background:var(--gold);vertical-align:middle;margin-right:10px}.hero h1,.section-heading h2,.interlude h2,.closing h2{font-family:var(--serif);font-weight:400;font-size:clamp(43px,5vw,67px);line-height:1.2;letter-spacing:-2.6px;color:var(--navy);margin:0}.hero h1 em,.section-heading h2 em,.interlude h2 em,.closing h2 em{font-weight:400;color:#ad8747}.hero-lede{max-width:480px;font-size:13px;line-height:1.95;color:#68757d;margin:24px 0 30px}.hero-buttons{display:flex;align-items:center;gap:24px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;gap:26px;padding:15px 18px;font-size:10px;font-weight:700;text-decoration:none;letter-spacing:.15px}.button-ink{background:var(--navy);color:#fff}.button span{font-size:17px;color:var(--gold-pale)}.underlined-link{font-size:10px;text-decoration:none;border-bottom:1px solid #c7b88f;padding-bottom:5px;color:var(--navy)}.hero-footnote{display:flex;align-items:center;gap:11px;margin-top:60px;color:#93948e;font-size:7px;letter-spacing:1.5px}.footnote-rule{width:28px;height:1px;background:var(--gold)}
-.hero-composition{width:100%;max-width:470px;justify-self:end}.composition-top,.composition-bottom{display:flex;justify-content:space-between;color:#8d8c82;font-size:7px;letter-spacing:1.6px}.composition-art{height:405px;margin:12px 0;background:var(--navy);position:relative;overflow:hidden;background-image:linear-gradient(145deg,#1d3b52,#0d2235)}.composition-art:before{content:"";position:absolute;inset:17px;border:1px solid rgba(222,194,139,.45)}.arch-outer{position:absolute;width:250px;height:300px;border:1px solid #c6a15b;border-bottom:0;border-radius:140px 140px 0 0;left:50%;top:48px;transform:translateX(-50%)}.arch-inner{position:absolute;width:195px;height:245px;border:1px solid rgba(224,207,169,.5);border-bottom:0;border-radius:110px 110px 0 0;left:50%;top:103px;transform:translateX(-50%)}.sun-disc{position:absolute;width:138px;height:138px;border-radius:50%;background:#c7a25f;right:11%;top:42px;opacity:.92}.obelisk{position:absolute;bottom:39px;left:calc(50% - 18px);height:225px;width:36px;background:linear-gradient(90deg,#80663e,#e0c58d 45%,#9b7b49);clip-path:polygon(50% 0,100% 100%,0 100%);opacity:.92}.plinth{position:absolute;bottom:38px;height:16px;background:#d4b779}.plinth-one{width:245px;left:calc(50% - 122px)}.plinth-two{width:295px;left:calc(50% - 147px);bottom:23px;height:5px;background:#927443}.fine-rule{position:absolute;left:50%;top:40px;height:325px;width:1px;background:rgba(255,255,255,.3)}.roman-mark{position:absolute;bottom:52px;left:27px;font-family:var(--serif);font-size:27px;color:#e2d2ac}.roman-mark span{font-size:12px;vertical-align:top;color:var(--gold)}
-.manifesto{padding:85px 9%;display:grid;grid-template-columns:.45fr 1.2fr .8fr;gap:4%;align-items:start;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.manifesto-index{font-family:var(--serif);font-size:17px;color:var(--gold)}.manifesto-index span{display:block;margin-top:8px;font:700 7px var(--sans);letter-spacing:1.8px;color:#8d9291}.manifesto-copy .section-label{margin-bottom:17px}.manifesto-copy h2{font:400 clamp(24px,3vw,37px)/1.45 var(--serif);letter-spacing:-.9px;color:var(--navy);margin:0}.manifesto-aside{padding-top:28px}.manifesto-aside p{font-size:11px;line-height:1.95;color:#778087;margin:0 0 18px}.arrow-link{font-size:10px;font-weight:700;color:#98743a;text-decoration:none}.arrow-link span{padding-left:7px}
-.pillars{padding:48px 9%;display:grid;grid-template-columns:repeat(3,1fr);gap:7%;background:#f1eee6}.pillars article{padding-left:18px;border-left:1px solid #c7b78f}.pillar-no{font-size:7px;letter-spacing:1.7px;color:#9a7a42}.pillars h3{font:400 20px var(--serif);color:var(--navy);margin:15px 0 9px}.pillars p{font-size:10px;line-height:1.9;color:#778087;margin:0;max-width:280px}
-.section-pad{padding:102px 9% 105px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:45px}.section-heading .section-label{margin-bottom:17px}.section-heading h2{font-size:43px}.heading-aside{max-width:330px;margin:0 0 4px;color:#748087;font-size:11px;line-height:1.95}.programme-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.programme-card{min-height:330px;padding:23px 22px 22px;background:#fff;border:1px solid #e5e1d7;display:flex;flex-direction:column;position:relative}.programme-dark{background:var(--navy);border-color:var(--navy)}.card-meta{display:flex;justify-content:space-between;font-size:7px;letter-spacing:1.4px;color:#9c8962}.programme-dark .card-meta{color:#d8c28e}.card-glyph{font:32px var(--serif);color:#bd9955;margin:34px 0 15px}.programme-card h3{font:400 20px/1.45 var(--serif);color:var(--navy);margin:0 0 12px}.programme-dark h3{color:#fff}.programme-card p{font-size:10px;line-height:1.9;color:#77818a;margin:0 0 22px}.programme-dark p{color:#c4cfd6}.programme-card>a{margin-top:auto;font-size:9px;font-weight:700;color:#9a783d;text-decoration:none}.programme-card>a span{padding-left:7px}.curriculum-note{margin:19px 0 0;color:#858b8c;font-size:9px;line-height:1.8}.curriculum-note span{color:#ad8747}
-.interlude{min-height:525px;background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:83px 12%;display:flex;align-items:center}.interlude:after{content:"";position:absolute;width:460px;height:460px;border:1px solid rgba(220,194,143,.22);border-radius:50%;right:-75px;top:35px;box-shadow:0 0 0 36px rgba(220,194,143,.025),0 0 0 72px rgba(220,194,143,.025)}.interlude-ornament{position:absolute;right:10%;top:48px;display:flex;align-items:center;gap:10px;writing-mode:vertical-rl;color:#bca36e;font-size:7px;letter-spacing:2px}.interlude-ornament i{height:75px;width:1px;background:#9c8048}.interlude-content{max-width:560px;position:relative;z-index:1}.section-label-light{color:#d6bd87}.interlude h2{font-size:48px;color:#fff;line-height:1.35}.interlude h2 em{color:#d3b36f}.interlude-content>p:not(.section-label){max-width:475px;font-size:11px;line-height:2;color:#c6d0d7;margin:20px 0 25px}.button-outline{border:1px solid rgba(224,203,158,.6);color:white}.interlude-number{position:absolute;bottom:38px;right:9%;font-size:7px;letter-spacing:2px;color:#a8b5bd}
-.reading-room{background:#fff}.reading-room .section-heading{margin-bottom:38px}.reading-list{border-top:1px solid var(--line)}.reading-list a{display:grid;grid-template-columns:55px 1.15fr 1fr 25px;gap:15px;align-items:center;padding:19px 5px;border-bottom:1px solid var(--line);text-decoration:none;transition:background .2s}.reading-list a:hover{background:#f8f6f0}.reading-number{font:italic 13px var(--serif);color:#ad8747}.reading-name{font:400 14px var(--serif);color:var(--navy)}.reading-detail{font-size:9px;color:#899197}.reading-arrow{color:#ad8747;text-align:right}.source-caveat{font-size:8px;color:#909596;margin:17px 0 0;line-height:1.7}
-.closing{text-align:center;padding:88px 20px 95px;background:#efede5}.closing .section-label{margin-bottom:17px}.closing h2{font-size:45px}.closing>p:not(.section-label){font-size:10px;color:#798188;margin:17px 0 25px}.closing .button{margin:auto}
-footer{background:#0b1e2e;padding:25px 9%;display:flex;align-items:center;justify-content:space-between;gap:18px;color:#aeb9bf;font-size:8px;letter-spacing:.4px}.footer-identity{font-size:9px;letter-spacing:1.5px;font-weight:700;text-decoration:none;color:#e1d1aa}
-@media(max-width:900px){.site-header{padding:0 5%}.primary-nav{gap:15px}.hero{padding-left:6%;padding-right:6%;gap:4%}.manifesto{padding-left:6%;padding-right:6%}.section-pad{padding-left:6%;padding-right:6%}.programme-card{padding:20px 17px}.programme-card h3{font-size:18px}}
-@media(max-width:650px){html{scroll-padding-top:130px}.site-header{height:auto;min-height:77px;padding:13px 5%;flex-wrap:wrap}.menu-toggle{display:flex;flex-direction:column;gap:5px;border:0;background:transparent;padding:10px}.menu-toggle span{width:22px;height:1px;background:var(--navy)}.primary-nav{display:none;order:4;width:100%;padding:14px 0 5px;border-top:1px solid var(--line);justify-content:space-between;gap:8px}.primary-nav.is-open{display:flex}.primary-nav a{font-size:9px}.header-cta{display:none}.hero{grid-template-columns:1fr;padding:55px 7% 45px}.hero h1{font-size:49px}.hero-lede{font-size:12px}.hero-footnote{margin-top:39px;flex-wrap:wrap}.hero-composition{justify-self:start;margin-top:38px}.composition-art{height:330px}.arch-outer{width:220px;height:260px}.arch-inner{width:170px;height:220px}.sun-disc{width:105px;height:105px}.manifesto{grid-template-columns:1fr;gap:18px;padding:58px 8%}.manifesto-index span{display:inline;margin-left:7px}.manifesto-aside{padding-top:0}.pillars{grid-template-columns:1fr;gap:27px;padding:43px 8%}.section-pad{padding:68px 7%}.section-heading{display:block}.section-heading h2{font-size:37px}.heading-aside{margin-top:18px}.programme-grid{grid-template-columns:1fr 1fr;gap:9px}.programme-card{min-height:315px;padding:17px 13px}.card-meta{font-size:6px}.card-glyph{margin:26px 0 13px}.programme-card h3{font-size:15px}.programme-card p{font-size:9px}.interlude{padding:65px 8%;min-height:490px}.interlude h2{font-size:38px}.interlude:after{right:-270px}.interlude-ornament{right:7%}.reading-list a{grid-template-columns:30px 1fr 20px;gap:8px}.reading-name{font-size:12px}.reading-detail{grid-column:2;grid-row:2;font-size:8px}.reading-arrow{grid-column:3;grid-row:1/3}.closing{padding:68px 15px}.closing h2{font-size:38px}footer{padding:23px 7%;flex-wrap:wrap}footer span:nth-child(2){order:3;width:100%}}
-@media(max-width:390px){.programme-grid{grid-template-columns:1fr}.programme-card{min-height:275px}.hero h1{font-size:44px}.hero-buttons{gap:17px}.button{gap:16px}}
+    :root {
+      --navy: #101f35;
+      --navy-light: #1b304b;
+      --gold: #c6a66b;
+      --gold-light: #e1c895;
+      --cream: #f7f5ef;
+      --white: #fff;
+      --ink: #202b39;
+      --muted: #687484;
+      --line: #e5e1d8;
+      --serif: "Libre Baskerville", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+    }
 
-.course-page{max-width:900px;margin:auto;padding:85px 8% 100px}.course-page h1{font:400 clamp(44px,6vw,68px)/1.2 var(--serif);color:var(--navy);letter-spacing:-2px;margin:0}.course-page h1 em{color:#ad8747}.course-intro{max-width:650px;font-size:14px;line-height:2;color:#697680;margin:25px 0 32px}.course-meta-line{display:flex;flex-wrap:wrap;gap:10px 18px;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:9px}.course-meta-line span{color:#9a783d;letter-spacing:1px}.course-meta-line b{font-weight:600;color:var(--navy);margin-right:20px}.course-page h2{font:400 24px var(--serif);color:var(--navy);margin:45px 0 20px}.module-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);counter-reset:module}.module-list li{counter-increment:module;padding:18px 10px 18px 48px;border-bottom:1px solid var(--line);position:relative}.module-list li:before{content:"0" counter(module);position:absolute;left:7px;top:20px;color:#ad8747;font:italic 13px var(--serif)}.module-list b{display:block;font:400 15px var(--serif);color:var(--navy);margin-bottom:7px}.module-list span,.question-list,.course-body{font-size:11px;line-height:1.9;color:#748087}.question-list{padding-left:20px}.question-list li{margin:9px 0}.course-body a{color:#9a783d}.course-disclaimer{padding:17px;background:#eeece5;border-left:2px solid var(--gold);font-size:10px;line-height:1.8;color:#697680;margin:35px 0}.course-page>.button{margin-top:10px}@media(max-width:600px){.course-page{padding:60px 7%}.course-meta-line{gap:8px}.course-meta-line b{margin-right:8px}}.course-page{max-width:900px;margin:auto;padding:85px 8% 100px}.course-page h1{font:400 clamp(44px,6vw,68px)/1.2 var(--serif);color:var(--navy);letter-spacing:-2px;margin:0}.course-page h1 em{color:#ad8747}.course-intro{max-width:650px;font-size:14px;line-height:2;color:#697680;margin:25px 0 32px}.course-meta-line{display:flex;flex-wrap:wrap;gap:10px 18px;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:9px}.course-meta-line span{color:#9a783d;letter-spacing:1px}.course-meta-line b{font-weight:600;color:var(--navy);margin-right:20px}.course-page h2{font:400 24px var(--serif);color:var(--navy);margin:45px 0 20px}.module-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);counter-reset:module}.module-list li{counter-increment:module;padding:18px 10px 18px 48px;border-bottom:1px solid var(--line);position:relative}.module-list li:before{content:"0" counter(module);position:absolute;left:7px;top:20px;color:#ad8747;font:italic 13px var(--serif)}.module-list b{display:block;font:400 15px var(--serif);color:var(--navy);margin-bottom:7px}.module-list span,.question-list,.course-body{font-size:11px;line-height:1.9;color:#748087}.question-list{padding-left:20px}.question-list li{margin:9px 0}.course-body a{color:#9a783d}.course-disclaimer{padding:17px;background:#eeece5;border-left:2px solid var(--gold);font-size:10px;line-height:1.8;color:#697680;margin:35px 0}.course-page>.button{margin-top:10px}@media(max-width:600px){.course-page{padding:60px 7%}.course-meta-line{gap:8px}.course-meta-line b{margin-right:8px}}.course-page{max-width:900px;margin:auto;padding:85px 8% 100px}.course-page h1{font:400 clamp(44px,6vw,68px)/1.2 var(--serif);color:var(--navy);letter-spacing:-2px;margin:0}.course-page h1 em{color:#ad8747}.course-intro{max-width:650px;font-size:14px;line-height:2;color:#697680;margin:25px 0 32px}.course-meta-line{display:flex;flex-wrap:wrap;gap:10px 18px;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:9px}.course-meta-line span{color:#9a783d;letter-spacing:1px}.course-meta-line b{font-weight:600;color:var(--navy);margin-right:20px}.course-page h2{font:400 24px var(--serif);color:var(--navy);margin:45px 0 20px}.module-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);counter-reset:module}.module-list li{counter-increment:module;padding:18px 10px 18px 48px;border-bottom:1px solid var(--line);position:relative}.module-list li:before{content:"0" counter(module);position:absolute;left:7px;top:20px;color:#ad8747;font:italic 13px var(--serif)}.module-list b{display:block;font:400 15px var(--serif);color:var(--navy);margin-bottom:7px}.module-list span,.question-list,.course-body{font-size:11px;line-height:1.9;color:#748087}.question-list{padding-left:20px}.question-list li{margin:9px 0}.course-body a{color:#9a783d}.course-disclaimer{padding:17px;background:#eeece5;border-left:2px solid var(--gold);font-size:10px;line-height:1.8;color:#697680;margin:35px 0}.course-page>.button{margin-top:10px}@media(max-width:600px){.course-page{padding:60px 7%}.course-meta-line{gap:8px}.course-meta-line b{margin-right:8px}}.course-page{max-width:900px;margin:auto;padding:85px 8% 100px}.course-page h1{font:400 clamp(44px,6vw,68px)/1.2 var(--serif);color:var(--navy);letter-spacing:-2px;margin:0}.course-page h1 em{color:#ad8747}.course-intro{max-width:650px;font-size:14px;line-height:2;color:#697680;margin:25px 0 32px}.course-meta-line{display:flex;flex-wrap:wrap;gap:10px 18px;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:9px}.course-meta-line span{color:#9a783d;letter-spacing:1px}.course-meta-line b{font-weight:600;color:var(--navy);margin-right:20px}.course-page h2{font:400 24px var(--serif);color:var(--navy);margin:45px 0 20px}.module-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);counter-reset:module}.module-list li{counter-increment:module;padding:18px 10px 18px 48px;border-bottom:1px solid var(--line);position:relative}.module-list li:before{content:"0" counter(module);position:absolute;left:7px;top:20px;color:#ad8747;font:italic 13px var(--serif)}.module-list b{display:block;font:400 15px var(--serif);color:var(--navy);margin-bottom:7px}.module-list span,.question-list,.course-body{font-size:11px;line-height:1.9;color:#748087}.question-list{padding-left:20px}.question-list li{margin:9px 0}.course-body a{color:#9a783d}.course-disclaimer{padding:17px;background:#eeece5;border-left:2px solid var(--gold);font-size:10px;line-height:1.8;color:#697680;margin:35px 0}.course-page>.button{margin-top:10px}@media(max-width:600px){.course-page{padding:60px 7%}.course-meta-line{gap:8px}.course-meta-line b{margin-right:8px}}.course-page{max-width:900px;margin:auto;padding:85px 8% 100px}.course-page h1{font:400 clamp(44px,6vw,68px)/1.2 var(--serif);color:var(--navy);letter-spacing:-2px;margin:0}.course-page h1 em{color:#ad8747}.course-intro{max-width:650px;font-size:14px;line-height:2;color:#697680;margin:25px 0 32px}.course-meta-line{display:flex;flex-wrap:wrap;gap:10px 18px;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:9px}.course-meta-line span{color:#9a783d;letter-spacing:1px}.course-meta-line b{font-weight:600;color:var(--navy);margin-right:20px}.course-page h2{font:400 24px var(--serif);color:var(--navy);margin:45px 0 20px}.module-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);counter-reset:module}.module-list li{counter-increment:module;padding:18px 10px 18px 48px;border-bottom:1px solid var(--line);position:relative}.module-list li:before{content:"0" counter(module);position:absolute;left:7px;top:20px;color:#ad8747;font:italic 13px var(--serif)}.module-list b{display:block;font:400 15px var(--serif);color:var(--navy);margin-bottom:7px}.module-list span,.question-list,.course-body{font-size:11px;line-height:1.9;color:#748087}.question-list{padding-left:20px}.question-list li{margin:9px 0}.course-body a{color:#9a783d}.course-disclaimer{padding:17px;background:#eeece5;border-left:2px solid var(--gold);font-size:10px;line-height:1.8;color:#697680;margin:35px 0}.course-page>.button{margin-top:10px}@media(max-width:600px){.course-page{padding:60px 7%}.course-meta-line{gap:8px}.course-meta-line b{margin-right:8px}}.course-page{max-width:900px;margin:auto;padding:85px 8% 100px}.course-page h1{font:400 clamp(44px,6vw,68px)/1.2 var(--serif);color:var(--navy);letter-spacing:-2px;margin:0}.course-page h1 em{color:#ad8747}.course-intro{max-width:650px;font-size:14px;line-height:2;color:#697680;margin:25px 0 32px}.course-meta-line{display:flex;flex-wrap:wrap;gap:10px 18px;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:9px}.course-meta-line span{color:#9a783d;letter-spacing:1px}.course-meta-line b{font-weight:600;color:var(--navy);margin-right:20px}.course-page h2{font:400 24px var(--serif);color:var(--navy);margin:45px 0 20px}.module-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);counter-reset:module}.module-list li{counter-increment:module;padding:18px 10px 18px 48px;border-bottom:1px solid var(--line);position:relative}.module-list li:before{content:"0" counter(module);position:absolute;left:7px;top:20px;color:#ad8747;font:italic 13px var(--serif)}.module-list b{display:block;font:400 15px var(--serif);color:var(--navy);margin-bottom:7px}.module-list span,.question-list,.course-body{font-size:11px;line-height:1.9;color:#748087}.question-list{padding-left:20px}.question-list li{margin:9px 0}.course-body a{color:#9a783d}.course-disclaimer{padding:17px;background:#eeece5;border-left:2px solid var(--gold);font-size:10px;line-height:1.8;color:#697680;margin:35px 0}.course-page>.button{margin-top:10px}@media(max-width:600px){.course-page{padding:60px 7%}.course-meta-line{gap:8px}.course-meta-line b{margin-right:8px}}
-.course-page{max-width:900px;margin:auto;padding:85px 8% 100px}.course-page h1{font:400 clamp(44px,6vw,68px)/1.2 var(--serif);color:var(--navy);letter-spacing:-2px;margin:0}.course-page h1 em{color:#ad8747}.course-intro{max-width:650px;font-size:14px;line-height:2;color:#697680;margin:25px 0 32px}.course-meta-line{display:flex;flex-wrap:wrap;gap:10px 18px;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:9px}.course-meta-line span{color:#9a783d;letter-spacing:1px}.course-meta-line b{font-weight:600;color:var(--navy);margin-right:20px}.course-page h2{font:400 24px var(--serif);color:var(--navy);margin:45px 0 20px}.module-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);counter-reset:module}.module-list li{counter-increment:module;padding:18px 10px 18px 48px;border-bottom:1px solid var(--line);position:relative}.module-list li:before{content:"0" counter(module);position:absolute;left:7px;top:20px;color:#ad8747;font:italic 13px var(--serif)}.module-list b{display:block;font:400 15px var(--serif);color:var(--navy);margin-bottom:7px}.module-list span,.question-list,.course-body{font-size:11px;line-height:1.9;color:#748087}.question-list{padding-left:20px}.question-list li{margin:9px 0}.course-body a{color:#9a783d}.course-disclaimer{padding:17px;background:#eeece5;border-left:2px solid var(--gold);font-size:10px;line-height:1.8;color:#697680;margin:35px 0}.single-course{scroll-margin-top:20px;border-top:1px solid #ddd}.single-course .course-page{padding:0}.single-course .button{margin-top:10px}@media(max-width:600px){.course-page{padding:60px 7%}.course-meta-line{gap:8px}.course-meta-line b{margin-right:8px}}
-</style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1160px, 90%);
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    .navbar {
+      background: var(--navy);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .nav-inner {
+      min-height: 82px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      display: grid;
+      place-items: center;
+      font-family: var(--serif);
+      font-size: 20px;
+    }
+
+    .brand-name {
+      font-family: var(--serif);
+      font-size: 16px;
+      letter-spacing: .3px;
+    }
+
+    .brand-subtitle {
+      display: block;
+      color: #aeb8c5;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+      font-size: 13px;
+      color: #d4dbe4;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-cta {
+      border: 1px solid var(--gold);
+      padding: 10px 17px;
+      color: var(--gold-light);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 0;
+      color: white;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      background:
+        radial-gradient(ellipse at 80% 35%, rgba(198,166,107,.14), transparent 38%),
+        linear-gradient(120deg, #101f35, #1b304b);
+      color: white;
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "A1";
+      position: absolute;
+      right: 5%;
+      bottom: -120px;
+      font-family: var(--serif);
+      font-size: clamp(250px, 36vw, 520px);
+      line-height: 1;
+      color: rgba(255,255,255,.025);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      padding: 100px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.2;
+      font-weight: 400;
+      max-width: 800px;
+      margin-bottom: 27px;
+    }
+
+    .hero-lead {
+      color: #d5dce5;
+      font-size: clamp(17px, 2vw, 21px);
+      max-width: 680px;
+      line-height: 1.8;
+      margin-bottom: 17px;
+    }
+
+    .hero-description {
+      color: #aebccc;
+      font-size: 15px;
+      max-width: 650px;
+      margin-bottom: 37px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 15px 25px;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 700;
+      transition: .25s;
+    }
+
+    .button:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .button-outline {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold-light);
+    }
+
+    .button-outline:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    /* Intro strip */
+
+    .intro-strip {
+      background: white;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .strip-inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 30px 0;
+    }
+
+    .strip-item {
+      text-align: center;
+      padding: 8px 20px;
+      border-right: 1px solid var(--line);
+    }
+
+    .strip-item:last-child {
+      border-right: 0;
+    }
+
+    .strip-item strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 400;
+      color: var(--navy);
+    }
+
+    .strip-item span {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* General sections */
+
+    section {
+      padding: 105px 0;
+    }
+
+    .section-label {
+      color: #9b7a43;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-size: 10px;
+      font-weight: 700;
+      margin-bottom: 17px;
+    }
+
+    .section-heading {
+      font-family: var(--serif);
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 45px);
+      line-height: 1.35;
+      font-weight: 400;
+      max-width: 750px;
+      margin-bottom: 22px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 680px;
+      font-size: 15px;
+    }
+
+    /* Manifesto */
+
+    .manifesto {
+      background: var(--cream);
+    }
+
+    .manifesto-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 90px;
+      align-items: center;
+    }
+
+    .manifesto-quote {
+      border-left: 2px solid var(--gold);
+      padding: 10px 0 10px 30px;
+      font-family: var(--serif);
+      font-size: clamp(21px, 2.5vw, 29px);
+      color: var(--navy);
+      line-height: 1.65;
+    }
+
+    .manifesto-copy {
+      color: var(--muted);
+      font-size: 15px;
+      margin-top: 20px;
+    }
+
+    /* Pillars */
+
+    .pillars {
+      background: white;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 55px;
+    }
+
+    .pillar-card {
+      padding: 35px 29px;
+      border: 1px solid var(--line);
+      background: #fff;
+      transition: .25s;
+    }
+
+    .pillar-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-5px);
+    }
+
+    .pillar-number {
+      font-family: var(--serif);
+      font-size: 34px;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+
+    .pillar-card h3 {
+      font-family: var(--serif);
+      color: var(--navy);
+      font-size: 19px;
+      font-weight: 400;
+      margin-bottom: 13px;
+    }
+
+    .pillar-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Programmes */
+
+    .programmes {
+      background: #f0eee7;
+    }
+
+    .programmes-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 45px;
+    }
+
+    .programmes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .programme-card {
+      background: white;
+      border: 1px solid #e6e1d7;
+      padding: 30px;
+      min-height: 270px;
+      display: flex;
+      flex-direction: column;
+      transition: .25s;
+    }
+
+    .programme-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
+      box-shadow: 0 15px 35px rgba(16,31,53,.07);
+    }
+
+    .programme-index {
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 2px;
+      margin-bottom: 23px;
+    }
+
+    .programme-card h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      color: var(--navy);
+      font-size: 21px;
+      line-height: 1.4;
+      margin-bottom: 14px;
+    }
+
+    .programme-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    .programme-link {
+      margin-top: auto;
+      color: #98753d;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .5px;
+    }
+
+    .programme-link:hover {
+      color: var(--navy);
+    }
+
+    /* Interlude */
+
+    .interlude {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .interlude .section-label {
+      color: var(--gold-light);
+    }
+
+    .interlude h2 {
+      font-family: var(--serif);
+      font-size: clamp(30px, 4vw, 48px);
+      font-weight: 400;
+      max-width: 800px;
+      margin: 0 auto 25px;
+      line-height: 1.5;
+    }
+
+    .interlude p {
+      color: #bdc7d3;
+      max-width: 650px;
+      margin: auto;
+      font-size: 14px;
+    }
+
+    /* Reading room */
+
+    .reading {
+      background: white;
+    }
+
+    .reading-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 75px;
+      margin-top: 45px;
+    }
+
+    .reading-copy {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .source-list {
+      list-style: none;
+      border-top: 1px solid var(--line);
+    }
+
+    .source-list li {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      font-size: 14px;
+      color: var(--navy);
+    }
+
+    .source-list a {
+      color: #9b7a43;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .source-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* Closing */
+
+    .closing {
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .closing h2 {
+      font-family: var(--serif);
+      color: var(--navy);
+      font-size: clamp(32px, 4vw, 49px);
+      font-weight: 400;
+      max-width: 750px;
+      margin: 0 auto 25px;
+      line-height: 1.4;
+    }
+
+    .closing p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 32px;
+      font-size: 14px;
+    }
+
+    /* Footer */
+
+    footer {
+      background: #0b1728;
+      color: #aeb8c5;
+      padding: 55px 0 25px;
+    }
+
+    .footer-main {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .footer-brand {
+      color: white;
+      font-family: var(--serif);
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .footer-description {
+      font-size: 12px;
+      max-width: 330px;
+      color: #8f9bab;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 25px;
+      align-items: start;
+      font-size: 12px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 22px;
+      font-size: 11px;
+      color: #778598;
+    }
+
+    /* Course detail pages */
+
+    .course-page {
+      display: none;
+      min-height: 80vh;
+      background: var(--cream);
+    }
+
+    .course-page.active {
+      display: block;
+    }
+
+    .course-hero {
+      background: var(--navy);
+      color: white;
+      padding: 85px 0;
+    }
+
+    .course-hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(35px, 5vw, 55px);
+      font-weight: 400;
+      max-width: 850px;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .course-hero p {
+      color: #c5ced9;
+      max-width: 700px;
+      font-size: 15px;
+    }
+
+    .course-content {
+      padding: 75px 0;
+    }
+
+    .course-layout {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 65px;
+    }
+
+    .course-content h2 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 27px;
+      color: var(--navy);
+      margin: 35px 0 17px;
+    }
+
+    .course-content h2:first-child {
+      margin-top: 0;
+    }
+
+    .course-content p,
+    .course-content li {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .course-content ul {
+      padding-left: 22px;
+      margin: 15px 0 25px;
+    }
+
+    .course-content li {
+      padding: 5px 0;
+    }
+
+    .course-sidebar {
+      background: white;
+      border: 1px solid var(--line);
+      padding: 28px;
+      height: fit-content;
+    }
+
+    .course-sidebar h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      color: var(--navy);
+      margin-bottom: 15px;
+    }
+
+    .course-sidebar p {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+
+    .disclaimer {
+      background: #f0eee7;
+      border-left: 3px solid var(--gold);
+      padding: 17px 20px;
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 850px) {
+      .nav-links {
+        gap: 15px;
+      }
+
+      .manifesto-grid,
+      .reading-grid,
+      .course-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .programmes-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .programmes-header {
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav-inner {
+        min-height: 72px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 72px;
+        background: var(--navy);
+        padding: 20px 5%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-cta {
+        display: inline-block;
+        text-align: center;
+      }
+
+      .hero {
+        min-height: 600px;
+      }
+
+      .hero-content {
+        padding: 80px 0;
+      }
+
+      .strip-inner {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .strip-item {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 18px;
+      }
+
+      .strip-item:last-child {
+        border-bottom: 0;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .programmes-grid,
+      .pillars-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-main,
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+      }
+
+      .source-list li {
+        align-items: start;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="masthead-rule"><span></span><i></i></div>
-  <header class="site-header">
-    <a class="identity" href="#home" aria-label="Business Academy A1 home">
-      <span class="identity-seal" aria-hidden="true"><b>A</b><small>1</small></span>
-      <span class="identity-wordmark"><strong>BUSINESS ACADEMY</strong><small>INDEPENDENT ADVANCED STUDIES</small></span>
-    </a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span></span><span></span></button>
-    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-      <a href="#philosophy">Philosophy</a><a href="#programmes">Programmes</a><a href="#method">Method</a><a href="#library">Reading room</a>
-    </nav>
-    <a class="header-cta" href="#programmes">Explore the academy <span>↗</span></a>
-  </header>
 
-  <main id="main">
-    <section class="hero" id="home">
-      <div class="hero-text">
-        <p class="kicker"><span class="kicker-line"></span> A SCHOOL OF THOUGHT FOR BUSINESS</p>
-        <h1>The art of<br>better business<br><em>thinking.</em></h1>
-        <p class="hero-lede">A considered education in management, strategy and the human questions behind organisations — informed by European scholarship and made for the world as it is.</p>
-        <div class="hero-buttons"><a class="button button-ink" href="#programmes">Discover the programmes <span>→</span></a><a class="underlined-link" href="#philosophy">Our intellectual approach</a></div>
-        <div class="hero-footnote"><span>EST. IN THE SPIRIT OF INQUIRY</span><span class="footnote-rule"></span><span>ACADEMIC EDITION · 01</span></div>
-      </div>
-      <div class="hero-composition" aria-label="Abstract study in classical architecture, geometry and light">
-        <div class="composition-top"><span>FIG. 01</span><span>ORDER / FORM / IDEAS</span></div>
-        <div class="composition-art">
-          <div class="arch-outer"></div><div class="arch-inner"></div>
-          <div class="sun-disc"></div><div class="obelisk"></div>
-          <div class="plinth plinth-one"></div><div class="plinth plinth-two"></div>
-          <div class="fine-rule"></div><div class="roman-mark">A<span>1</span></div>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand" onclick="showHome()">
+        <div class="brand-mark">A1</div>
+        <div>
+          <div class="brand-name">Business Academy</div>
+          <span class="brand-subtitle">Independent Learning</span>
         </div>
-        <div class="composition-bottom"><span>THE CLASSICAL IDEAL</span><span>AN OPEN FIELD OF IDEAS</span></div>
-      </div>
-    </section>
+      </a>
 
-    <section class="manifesto" id="philosophy">
-      <div class="manifesto-index">I. <span>OUR CONVICTION</span></div>
-      <div class="manifesto-copy"><p class="section-label">BEYOND THE TOOLKIT</p><h2>Business is a human discipline<br>before it is a technical one.</h2></div>
-      <div class="manifesto-aside"><p>Organisations are shaped by judgement, institutions, incentives, culture and the choices people make together. Serious management education must examine all of them.</p><a href="#method" class="arrow-link">How we learn <span>↗</span></a></div>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" onclick="showHome()">About</a></li>
+        <li><a href="#programmes" onclick="showHome()">Programmes</a></li>
+        <li><a href="#reading" onclick="showHome()">Reading Room</a></li>
+        <li><a href="#contact" onclick="showHome()">Contact</a></li>
+        <li><a href="#programmes" class="nav-cta" onclick="showHome()">Explore Learning</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="homePage">
+
+    <header class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">Business Academy A1</div>
+
+          <h1>Business Education for Everyone</h1>
+
+          <p class="hero-lead">
+            Free learning in business, management, and strategy — open to everyone, everywhere.
+          </p>
+
+          <p class="hero-description">
+            Explore new ideas, develop practical knowledge, and build the skills to understand and navigate the world of business.
+          </p>
+
+          <a href="#programmes" class="button">Explore Programmes <span>→</span></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="intro-strip">
+      <div class="container strip-inner">
+        <div class="strip-item">
+          <strong>Open Access</strong>
+          <span>Learning for everyone</span>
+        </div>
+        <div class="strip-item">
+          <strong>Independent</strong>
+          <span>Explore ideas freely</span>
+        </div>
+        <div class="strip-item">
+          <strong>Practical Knowledge</strong>
+          <span>Ideas for the real world</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="manifesto" id="about">
+      <div class="container manifesto-grid">
+        <div>
+          <div class="section-label">Our Purpose</div>
+          <h2 class="section-heading">Knowledge should be accessible, useful, and open to all.</h2>
+          <p class="section-intro">
+            Business Academy A1 is an independent educational initiative designed to make business knowledge easier to explore and understand.
+          </p>
+        </div>
+
+        <div>
+          <div class="manifesto-quote">
+            “Better business thinking begins with curiosity, clear questions, and the willingness to keep learning.”
+          </div>
+          <p class="manifesto-copy">
+            We bring together essential concepts, practical perspectives, and learning resources across business disciplines. Our aim is to encourage thoughtful learning rather than simply memorising terminology.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="pillars">
-      <article><span class="pillar-no">01 / INQUIRY</span><h3>Think in context.</h3><p>Study ideas in their historical, economic and institutional setting — not as isolated formulas.</p></article>
-      <article><span class="pillar-no">02 / JUDGEMENT</span><h3>Question assumptions.</h3><p>Build the habit of testing evidence, recognising trade-offs and reasoning through uncertainty.</p></article>
-      <article><span class="pillar-no">03 / PRACTICE</span><h3>Act with purpose.</h3><p>Translate sound analysis into responsible decisions, clear communication and considered action.</p></article>
+      <div class="container">
+        <div class="section-label">The Learning Approach</div>
+        <h2 class="section-heading">A foundation for better business understanding.</h2>
+        <p class="section-intro">
+          Explore business through connected ideas, thoughtful analysis, and practical questions.
+        </p>
+
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <div class="pillar-number">01</div>
+            <h3>Understand</h3>
+            <p>Build a clear understanding of essential business concepts, frameworks, and principles.</p>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-number">02</div>
+            <h3>Analyse</h3>
+            <p>Learn to examine business situations, evaluate information, and consider different perspectives.</p>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-number">03</div>
+            <h3>Apply</h3>
+            <p>Connect ideas to organisational decisions, everyday challenges, and real business situations.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="programmes section-pad" id="programmes">
-      <div class="section-heading">
-        <div><p class="section-label">II. THE CURRICULUM</p><h2>Disciplines for<br><em>complex times.</em></h2></div>
-        <p class="heading-aside">A developing portfolio of structured courses. Each programme is designed to connect foundational scholarship with contemporary organisational questions.</p>
+    <section class="programmes" id="programmes">
+      <div class="container">
+        <div class="programmes-header">
+          <div>
+            <div class="section-label">Areas of Study</div>
+            <h2 class="section-heading">Explore the programmes.</h2>
+            <p class="section-intro">Six essential areas for developing a broad understanding of business.</p>
+          </div>
+        </div>
+
+        <div class="programmes-grid">
+
+          <article class="programme-card">
+            <div class="programme-index">PROGRAMME 01</div>
+            <h3>Strategic Management</h3>
+            <p>Understand how organisations set direction, assess their environment, and make long-term decisions.</p>
+            <a class="programme-link" href="#strategic-management" onclick="showCourse('strategic')">Explore Programme →</a>
+          </article>
+
+          <article class="programme-card">
+            <div class="programme-index">PROGRAMME 02</div>
+            <h3>Organisational Behaviour</h3>
+            <p>Explore people, leadership, motivation, teams, and the dynamics of organisations.</p>
+            <a class="programme-link" href="#organisational-behaviour" onclick="showCourse('organisation')">Explore Programme →</a>
+          </article>
+
+          <article class="programme-card">
+            <div class="programme-index">PROGRAMME 03</div>
+            <h3>Corporate Finance</h3>
+            <p>Discover financial decision-making, investment, risk, valuation, and the use of capital.</p>
+            <a class="programme-link" href="#corporate-finance" onclick="showCourse('finance')">Explore Programme →</a>
+          </article>
+
+          <article class="programme-card">
+            <div class="programme-index">PROGRAMME 04</div>
+            <h3>Marketing Strategy</h3>
+            <p>Learn how organisations understand customers, create value, and build meaningful brands.</p>
+            <a class="programme-link" href="#marketing-strategy" onclick="showCourse('marketing')">Explore Programme →</a>
+          </article>
+
+          <article class="programme-card">
+            <div class="programme-index">PROGRAMME 05</div>
+            <h3>Managerial Economics</h3>
+            <p>Apply economic reasoning to business decisions, markets, competition, and resource allocation.</p>
+            <a class="programme-link" href="#managerial-economics" onclick="showCourse('economics')">Explore Programme →</a>
+          </article>
+
+          <article class="programme-card">
+            <div class="programme-index">PROGRAMME 06</div>
+            <h3>Corporate Governance</h3>
+            <p>Examine accountability, ethical leadership, corporate oversight, and responsible decision-making.</p>
+            <a class="programme-link" href="#corporate-governance" onclick="showCourse('governance')">Explore Programme →</a>
+          </article>
+
+        </div>
       </div>
-      <div class="programme-grid">
-        <article class="programme-card programme-dark"><div class="card-meta"><span>01</span><span>STRATEGY</span></div><div class="card-glyph">↗</div><h3>Strategic<br>Management</h3><p>Competitive advantage, industry structure, capabilities and the choices that shape long-term direction.</p><a href="#course-strategic-management">Enter course <span>→</span></a></article>
-        <article class="programme-card"><div class="card-meta"><span>02</span><span>ORGANISATIONS</span></div><div class="card-glyph">⌘</div><h3>Organisational<br>Behaviour</h3><p>Motivation, leadership, culture, power and the social life of organisations.</p><a href="#course-organisational-behaviour">Enter course <span>→</span></a></article>
-        <article class="programme-card"><div class="card-meta"><span>03</span><span>FINANCE</span></div><div class="card-glyph">◫</div><h3>Corporate<br>Finance</h3><p>Investment appraisal, cost of capital, valuation and financial decision-making.</p><a href="#course-corporate-finance">Enter course <span>→</span></a></article>
-        <article class="programme-card"><div class="card-meta"><span>04</span><span>MARKETS</span></div><div class="card-glyph">◎</div><h3>Marketing<br>Strategy</h3><p>Market orientation, customer value, positioning and the meaning of brands.</p><a href="#course-marketing-strategy">Enter course <span>→</span></a></article>
-        <article class="programme-card"><div class="card-meta"><span>05</span><span>ECONOMICS</span></div><div class="card-glyph">∑</div><h3>Managerial<br>Economics</h3><p>Incentives, market behaviour, pricing, competition and decision-making under scarcity.</p><a href="#course-managerial-economics">Enter course <span>→</span></a></article>
-        <article class="programme-card"><div class="card-meta"><span>06</span><span>GOVERNANCE</span></div><div class="card-glyph">⚖</div><h3>Corporate<br>Governance</h3><p>Accountability, boards, stakeholders, ethics and the institutions of responsible enterprise.</p><a href="#course-corporate-governance">Enter course <span>→</span></a></article>
-      </div>
-      <p class="curriculum-note"><span>*</span> Course pages currently provide structured outlines and initial reading directions. Full lessons, assessments and reviewed bibliographies are being developed in stages.</p>
     </section>
 
-    <section class="interlude" id="method">
-      <div class="interlude-ornament"><span>DISPUTARE</span><i></i><span>DISCERNERE</span></div>
-      <div class="interlude-content"><p class="section-label section-label-light">III. THE A1 METHOD</p><h2>Read closely.<br><em>Reason carefully.</em><br>Decide responsibly.</h2><p>Our learning method brings together conceptual clarity, close reading, case analysis and reflective application. The aim is not to memorise fashionable language, but to develop durable judgement.</p><a class="button button-outline" href="#library">Visit the reading room <span>→</span></a></div>
-      <div class="interlude-number">A1 / METHOD</div>
+    <section class="interlude">
+      <div class="container">
+        <div class="section-label">A Different Way to Learn</div>
+        <h2>Business is more than numbers. It is people, choices, ideas, and consequences.</h2>
+        <p>
+          Understanding business means seeing how decisions connect — from individuals and teams to organisations, markets, and society.
+        </p>
+      </div>
     </section>
 
-    <section class="reading-room section-pad" id="library">
-      <div class="section-heading">
-        <div><p class="section-label">IV. THE READING ROOM</p><h2>Start with<br><em>good questions.</em></h2></div>
-        <p class="heading-aside">We prioritise primary research, university teaching materials and publications from established European academic institutions. Sources are identified so learners can follow the argument further.</p>
+    <section class="reading" id="reading">
+      <div class="container">
+        <div class="section-label">The Reading Room</div>
+        <h2 class="section-heading">Learning continues beyond the classroom.</h2>
+
+        <div class="reading-grid">
+          <div class="reading-copy">
+            <p>
+              Explore research, university teaching materials, and trusted publications. Each source is identified so learners can follow the ideas further.
+            </p>
+            <br>
+            <p>
+              The Reading Room is intended to support independent exploration, encourage critical thinking, and help learners discover different approaches to business questions.
+            </p>
+          </div>
+
+          <ul class="source-list">
+            <li>
+              <span>Harvard Business School</span>
+              <a href="https://www.hbs.edu/" target="_blank" rel="noopener">Visit ↗</a>
+            </li>
+            <li>
+              <span>MIT Sloan School of Management</span>
+              <a href="https://mitsloan.mit.edu/" target="_blank" rel="noopener">Visit ↗</a>
+            </li>
+            <li>
+              <span>London School of Economics</span>
+              <a href="https://www.lse.ac.uk/" target="_blank" rel="noopener">Visit ↗</a>
+            </li>
+            <li>
+              <span>Oxford Saïd Business School</span>
+              <a href="https://www.sbs.ox.ac.uk/" target="_blank" rel="noopener">Visit ↗</a>
+            </li>
+            <li>
+              <span>Rotterdam School of Management</span>
+              <a href="https://www.rsm.nl/" target="_blank" rel="noopener">Visit ↗</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="reading-list">
-        <a href="https://www.lse.ac.uk/management" target="_blank" rel="noopener"><span class="reading-number">01</span><span class="reading-name">London School of Economics</span><span class="reading-detail">Management research & teaching</span><span class="reading-arrow">↗</span></a>
-        <a href="https://www.sbs.ox.ac.uk/" target="_blank" rel="noopener"><span class="reading-number">02</span><span class="reading-name">Saïd Business School, Oxford</span><span class="reading-detail">Business research & executive education</span><span class="reading-arrow">↗</span></a>
-        <a href="https://www.rsm.nl/" target="_blank" rel="noopener"><span class="reading-number">03</span><span class="reading-name">Rotterdam School of Management</span><span class="reading-detail">Research-led management education</span><span class="reading-arrow">↗</span></a>
-        <a href="https://www.hec.edu/en" target="_blank" rel="noopener"><span class="reading-number">04</span><span class="reading-name">HEC Paris</span><span class="reading-detail">Management scholarship & research</span><span class="reading-arrow">↗</span></a>
-      </div>
-      <p class="source-caveat">External institutions are independent sources, not partners or endorsers of Business Academy A1. Their inclusion does not imply accreditation.</p>
     </section>
 
-    <section class="closing">
-      <p class="section-label">BUSINESS ACADEMY A1</p><h2>Make room for<br><em>better thinking.</em></h2><p>Independent study. Intellectual discipline. Practical perspective.</p><a href="#programmes" class="button button-ink">Explore the curriculum <span>→</span></a>
+    <section class="closing" id="contact">
+      <div class="container">
+        <div class="section-label">Begin Exploring</div>
+        <h2>Your next idea could change the way you understand business.</h2>
+        <p>
+          Start with a subject that interests you. Ask questions, explore the concepts, and develop your own perspective.
+        </p>
+        <a href="#programmes" class="button">Explore Programmes <span>→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- COURSE: STRATEGIC MANAGEMENT -->
+  <main class="course-page" id="course-strategic">
+    <header class="course-hero">
+      <div class="container">
+        <a href="#programmes" class="back-link" onclick="showHome()">← Back to Programmes</a>
+        <div class="eyebrow">Programme 01</div>
+        <h1>Strategic Management</h1>
+        <p>Understand how organisations analyse their environment, establish direction, and make decisions that shape their future.</p>
+      </div>
+    </header>
+
+    <section class="course-content">
+      <div class="container course-layout">
+        <div>
+          <h2>About this programme</h2>
+          <p>Strategic management examines the choices organisations make to achieve long-term objectives. It connects external analysis, internal capabilities, competitive positioning, and implementation.</p>
+
+          <h2>Key topics</h2>
+          <ul>
+            <li>Introduction to strategic management</li>
+            <li>Vision, mission, and organisational objectives</li>
+            <li>External environment and industry analysis</li>
+            <li>Internal resources and capabilities</li>
+            <li>Competitive advantage and positioning</li>
+            <li>Corporate and business-level strategy</li>
+            <li>Strategy implementation and evaluation</li>
+          </ul>
+
+          <h2>Questions to consider</h2>
+          <ul>
+            <li>Why do some organisations maintain a competitive advantage?</li>
+            <li>How should a business respond to changes in its environment?</li>
+            <li>What makes a strategy effective in practice?</li>
+          </ul>
+        </div>
+
+        <aside class="course-sidebar">
+          <h3>Suggested starting points</h3>
+          <p>Explore introductory material on strategy, competitive advantage, and organisational analysis.</p>
+          <p><a href="https://www.hbs.edu/" target="_blank" rel="noopener">Harvard Business School →</a></p>
+          <p><a href="https://www.sbs.ox.ac.uk/" target="_blank" rel="noopener">Oxford Saïd Business School →</a></p>
+          <div class="disclaimer">This page provides a programme outline. A complete lesson sequence and assessed activities are not yet published.</div>
+        </aside>
+      </div>
     </section>
   </main>
-  <section class="course-page single-course" id="course-strategic-management"><p class="section-label">PROGRAMME 01 · STRATEGY</p><h1>Strategic<br/><em>Management.</em></h1><p class="course-intro">Understand how organisations analyse their environments, choose a direction and build the capabilities required to sustain performance.</p><div class="course-meta-line"><span>FIELD</span><b>Strategy &amp; organisation</b><span>LEVEL</span><b>Advanced introductory</b></div><h2>Learning outline</h2><ol class="module-list"><li><b>Strategy as a field of inquiry</b><span>Purpose, scope, levels of strategy and the limits of strategic planning.</span></li><li><b>External analysis</b><span>Industry structure, competitive forces, macro-environment and uncertainty.</span></li><li><b>Resources and capabilities</b><span>Resource-based perspectives, dynamic capabilities and organisational fit.</span></li><li><b>Corporate and business strategy</b><span>Scope, diversification, positioning, business models and strategic choice.</span></li><li><b>Implementation and renewal</b><span>Organisation design, strategic change, execution and evaluation.</span></li></ol><h2>Questions to consider</h2><ul class="question-list"><li>What makes an advantage sustainable rather than temporary?</li><li>How should leaders respond when evidence is incomplete?</li><li>When can a successful strategy become a source of organisational inertia?</li></ul><h2>Suggested academic starting points</h2><p class="course-body">Use university library access to consult peer-reviewed research and recognised textbooks. Begin with the strategy and management research collections at <a href="https://www.sbs.ox.ac.uk/" rel="noopener" target="_blank">Oxford Saïd</a>, <a href="https://www.lse.ac.uk/management" rel="noopener" target="_blank">LSE</a> and <a href="https://www.rsm.nl/" rel="noopener" target="_blank">Rotterdam School of Management</a>. Check publication details and editions before citing a work.</p><p class="course-disclaimer">This is an independent learning resource, not an accredited qualification. A complete lesson sequence, assessed activities and verified bibliography are not yet published.</p><a class="button button-ink" href="#programmes">Return to programmes <span>←</span></a></section><section class="course-page single-course" id="course-organisational-behaviour"><p class="section-label">PROGRAMME 02 · ORGANISATIONS</p><h1>Organisational<br/><em>Behaviour.</em></h1><p class="course-intro">Explore how individuals and groups behave at work, how organisations create culture, and how leadership shapes collective action.</p><div class="course-meta-line"><span>FIELD</span><b>People &amp; organisations</b><span>LEVEL</span><b>Advanced introductory</b></div><h2>Learning outline</h2><ol class="module-list"><li><b>Foundations of organisational behaviour</b><span>Levels of analysis, evidence, context and competing perspectives.</span></li><li><b>Individual differences and motivation</b><span>Perception, personality, motivation and work design.</span></li><li><b>Groups, teams and power</b><span>Group dynamics, conflict, influence, negotiation and decision-making.</span></li><li><b>Leadership and organisational culture</b><span>Leadership approaches, values, norms and culture in practice.</span></li><li><b>Change, wellbeing and responsibility</b><span>Organisational change, employee experience, inclusion and ethical practice.</span></li></ol><h2>Questions to consider</h2><ul class="question-list"><li>How do formal structures and informal norms interact?</li><li>Why can the same incentive motivate one person and discourage another?</li><li>What responsibilities do organisations have for employee wellbeing?</li></ul><h2>Suggested academic starting points</h2><p class="course-body">Explore management and organisational research from <a href="https://www.lse.ac.uk/management" rel="noopener" target="_blank">LSE</a>, <a href="https://www.sbs.ox.ac.uk/" rel="noopener" target="_blank">Oxford Saïd</a> and <a href="https://www.rsm.nl/" rel="noopener" target="_blank">Rotterdam School of Management</a>. Prioritise peer-reviewed articles and check the original publication details.</p><p class="course-disclaimer">This is an independent learning resource, not an accredited qualification. A complete lesson sequence, assessed activities and verified bibliography are not yet published.</p><a class="button button-ink" href="#programmes">Return to programmes <span>←</span></a></section><section class="course-page single-course" id="course-corporate-finance"><p class="section-label">PROGRAMME 03 · FINANCE</p><h1>Corporate<br/><em>Finance.</em></h1><p class="course-intro">Examine how firms make investment and financing decisions, assess value and balance financial return with risk.</p><div class="course-meta-line"><span>FIELD</span><b>Finance &amp; investment</b><span>LEVEL</span><b>Advanced introductory</b></div><h2>Learning outline</h2><ol class="module-list"><li><b>Financial objectives and governance</b><span>Firm objectives, agency questions, financial statements and the role of finance.</span></li><li><b>Time value of money and valuation</b><span>Discounting, present value, cash flows and valuation principles.</span></li><li><b>Investment appraisal</b><span>Net present value, internal rate of return, capital budgeting and sensitivity.</span></li><li><b>Risk, return and cost of capital</b><span>Risk measurement, diversification, required return and financing costs.</span></li><li><b>Capital structure and payout</b><span>Debt and equity, financing choices, dividends and financial resilience.</span></li></ol><h2>Questions to consider</h2><ul class="question-list"><li>Why is cash flow central to investment appraisal?</li><li>How do assumptions affect a valuation?</li><li>When might a financially attractive project still be strategically unwise?</li></ul><h2>Suggested academic starting points</h2><p class="course-body">Consult finance research and teaching resources from <a href="https://www.lse.ac.uk/" rel="noopener" target="_blank">LSE</a>, <a href="https://www.sbs.ox.ac.uk/" rel="noopener" target="_blank">Oxford Saïd</a> and <a href="https://www.hec.edu/en" rel="noopener" target="_blank">HEC Paris</a>. Use current editions of established corporate finance texts and verify all data used in exercises.</p><p class="course-disclaimer">This is an independent learning resource, not an accredited qualification. A complete lesson sequence, assessed activities and verified bibliography are not yet published.</p><a class="button button-ink" href="#programmes">Return to programmes <span>←</span></a></section><section class="course-page single-course" id="course-marketing-strategy"><p class="section-label">PROGRAMME 04 · MARKETS</p><h1>Marketing<br/><em>Strategy.</em></h1><p class="course-intro">Study how organisations understand markets, create customer value and build meaningful, defensible positions.</p><div class="course-meta-line"><span>FIELD</span><b>Markets &amp; customers</b><span>LEVEL</span><b>Advanced introductory</b></div><h2>Learning outline</h2><ol class="module-list"><li><b>Marketing as value creation</b><span>Market orientation, exchange, value propositions and strategic role.</span></li><li><b>Market and customer analysis</b><span>Research design, segmentation, customer insight and decision journeys.</span></li><li><b>Positioning and brand strategy</b><span>Differentiation, brand meaning, reputation and competitive positioning.</span></li><li><b>Go-to-market decisions</b><span>Product, pricing, channels, communication and integrated execution.</span></li><li><b>Measurement and responsible marketing</b><span>Marketing performance, long-term relationships, trust and societal impact.</span></li></ol><h2>Questions to consider</h2><ul class="question-list"><li>What makes a value proposition credible to a customer?</li><li>How can a brand remain distinctive as markets change?</li><li>Which marketing metrics can mislead decision-makers?</li></ul><h2>Suggested academic starting points</h2><p class="course-body">Explore marketing scholarship through <a href="https://www.hec.edu/en" rel="noopener" target="_blank">HEC Paris</a>, <a href="https://www.rsm.nl/" rel="noopener" target="_blank">Rotterdam School of Management</a> and <a href="https://www.lse.ac.uk/" rel="noopener" target="_blank">LSE</a>. For research claims, follow the original journal article rather than relying only on summaries.</p><p class="course-disclaimer">This is an independent learning resource, not an accredited qualification. A complete lesson sequence, assessed activities and verified bibliography are not yet published.</p><a class="button button-ink" href="#programmes">Return to programmes <span>←</span></a></section><section class="course-page single-course" id="course-managerial-economics"><p class="section-label">PROGRAMME 05 · ECONOMICS</p><h1>Managerial<br/><em>Economics.</em></h1><p class="course-intro">Apply economic reasoning to business choices involving incentives, prices, competition, resources and uncertainty.</p><div class="course-meta-line"><span>FIELD</span><b>Economics &amp; decisions</b><span>LEVEL</span><b>Advanced introductory</b></div><h2>Learning outline</h2><ol class="module-list"><li><b>Economic reasoning for managers</b><span>Scarcity, opportunity cost, marginal analysis and models.</span></li><li><b>Demand, supply and elasticity</b><span>Market equilibrium, responsiveness, shifts and practical interpretation.</span></li><li><b>Production and costs</b><span>Production functions, cost structures, scale and productivity.</span></li><li><b>Market structure and competition</b><span>Perfect competition, monopoly, oligopoly and strategic interaction.</span></li><li><b>Pricing and decisions under uncertainty</b><span>Pricing logic, information, risk and behavioural limits.</span></li></ol><h2>Questions to consider</h2><ul class="question-list"><li>What does opportunity cost reveal that accounting cost may hide?</li><li>How does market power affect pricing and consumer welfare?</li><li>When are simplified economic models useful, and when are they dangerous?</li></ul><h2>Suggested academic starting points</h2><p class="course-body">Use university economics teaching and research from <a href="https://www.lse.ac.uk/" rel="noopener" target="_blank">LSE</a>, <a href="https://www.ox.ac.uk/" rel="noopener" target="_blank">University of Oxford</a> and <a href="https://www.hec.edu/en" rel="noopener" target="_blank">HEC Paris</a>. Check model assumptions and cite the original academic material used.</p><p class="course-disclaimer">This is an independent learning resource, not an accredited qualification. A complete lesson sequence, assessed activities and verified bibliography are not yet published.</p><a class="button button-ink" href="#programmes">Return to programmes <span>←</span></a></section><section class="course-page single-course" id="course-corporate-governance"><p class="section-label">PROGRAMME 06 · GOVERNANCE</p><h1>Corporate<br/><em>Governance.</em></h1><p class="course-intro">Examine the systems through which companies are directed, monitored and held accountable to shareholders and wider stakeholders.</p><div class="course-meta-line"><span>FIELD</span><b>Governance &amp; responsibility</b><span>LEVEL</span><b>Advanced introductory</b></div><h2>Learning outline</h2><ol class="module-list"><li><b>Purpose and governance systems</b><span>Ownership, control, accountability and institutional context.</span></li><li><b>Boards and executive leadership</b><span>Board roles, composition, oversight, incentives and effectiveness.</span></li><li><b>Shareholders and stakeholders</b><span>Stakeholder interests, engagement, conflicts and legitimacy.</span></li><li><b>Risk, audit and internal control</b><span>Risk oversight, assurance, transparency and reporting.</span></li><li><b>Ethics and responsible enterprise</b><span>Corporate conduct, sustainability, regulation and long-term trust.</span></li></ol><h2>Questions to consider</h2><ul class="question-list"><li>How should boards balance oversight with strategic support?</li><li>Who should have a voice in corporate decision-making?</li><li>Can strong governance create value beyond compliance?</li></ul><h2>Suggested academic starting points</h2><p class="course-body">Begin with governance research and institutional material from <a href="https://www.lse.ac.uk/" rel="noopener" target="_blank">LSE</a>, <a href="https://www.sbs.ox.ac.uk/" rel="noopener" target="_blank">Oxford Saïd</a> and <a href="https://www.hec.edu/en" rel="noopener" target="_blank">HEC Paris</a>. Distinguish academic research from regulatory guidance and professional commentary.</p><p class="course-disclaimer">This is an independent learning resource, not an accredited qualification. A complete lesson sequence, assessed activities and verified bibliography are not yet published.</p><a class="button button-ink" href="#programmes">Return to programmes <span>←</span></a></section>
-  <footer><a class="footer-identity" href="#home">BUSINESS ACADEMY A1</a><span>Independent education · European intellectual outlook</span><span>© <span id="year"></span> A1</span></footer>
+
+  <!-- COURSE: ORGANISATIONAL BEHAVIOUR -->
+  <main class="course-page" id="course-organisation">
+    <header class="course-hero">
+      <div class="container">
+        <a href="#programmes" class="back-link" onclick="showHome()">← Back to Programmes</a>
+        <div class="eyebrow">Programme 02</div>
+        <h1>Organisational Behaviour</h1>
+        <p>Explore how individuals and groups behave within organisations, and how leadership and culture influence performance.</p>
+      </div>
+    </header>
+
+    <section class="course-content">
+      <div class="container course-layout">
+        <div>
+          <h2>About this programme</h2>
+          <p>Organisational behaviour studies the human side of organisations. It examines individual behaviour, group dynamics, leadership, motivation, communication, and organisational culture.</p>
+
+          <h2>Key topics</h2>
+          <ul>
+            <li>Foundations of organisational behaviour</li>
+            <li>Personality, perception, and individual differences</li>
+            <li>Motivation and job satisfaction</li>
+            <li>Groups, teams, and collaboration</li>
+            <li>Leadership and influence</li>
+            <li>Organisational culture and change</li>
+            <li>Conflict, communication, and negotiation</li>
+          </ul>
+
+          <h2>Questions to consider</h2>
+          <ul>
+            <li>What motivates people at work?</li>
+            <li>How does organisational culture influence behaviour?</li>
+            <li>What distinguishes effective leadership?</li>
+          </ul>
+        </div>
+
+        <aside class="course-sidebar">
+          <h3>Suggested starting points</h3>
+          <p>Explore research and learning resources on leadership, people management, and organisational behaviour.</p>
+          <p><a href="https://mitsloan.mit.edu/" target="_blank" rel="noopener">MIT Sloan →</a></p>
+          <p><a href="https://www.hbs.edu/" target="_blank" rel="noopener">Harvard Business School →</a></p>
+          <div class="disclaimer">This page provides a programme outline. A complete lesson sequence and assessed activities are not yet published.</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- COURSE: CORPORATE FINANCE -->
+  <main class="course-page" id="course-finance">
+    <header class="course-hero">
+      <div class="container">
+        <a href="#programmes" class="back-link" onclick="showHome()">← Back to Programmes</a>
+        <div class="eyebrow">Programme 03</div>
+        <h1>Corporate Finance</h1>
+        <p>Discover how organisations make financial decisions, evaluate investments, manage risk, and allocate capital.</p>
+      </div>
+    </header>
+
+    <section class="course-content">
+      <div class="container course-layout">
+        <div>
+          <h2>About this programme</h2>
+          <p>Corporate finance focuses on how businesses raise and use funds. It explores investment decisions, financing choices, valuation, financial risk, and the relationship between financial decisions and organisational value.</p>
+
+          <h2>Key topics</h2>
+          <ul>
+            <li>Foundations of corporate finance</li>
+            <li>Financial statements and analysis</li>
+            <li>Time value of money</li>
+            <li>Investment appraisal and capital budgeting</li>
+            <li>Risk and return</li>
+            <li>Capital structure and financing</li>
+            <li>Business valuation and financial planning</li>
+          </ul>
+
+          <h2>Questions to consider</h2>
+          <ul>
+            <li>How should a business evaluate an investment?</li>
+            <li>What is the relationship between risk and expected return?</li>
+            <li>How do financing decisions affect organisational value?</li>
+          </ul>
+        </div>
+
+        <aside class="course-sidebar">
+          <h3>Suggested starting points</h3>
+          <p>Explore introductory finance resources and materials on financial decision-making.</p>
+          <p><a href="https://www.hbs.edu/" target="_blank" rel="noopener">Harvard Business School →</a></p>
+          <p><a href="https://mitsloan.mit.edu/" target="_blank" rel="noopener">MIT Sloan →</a></p>
+          <div class="disclaimer">This page provides a programme outline. A complete lesson sequence and assessed activities are not yet published.</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- COURSE: MARKETING STRATEGY -->
+  <main class="course-page" id="course-marketing">
+    <header class="course-hero">
+      <div class="container">
+        <a href="#programmes" class="back-link" onclick="showHome()">← Back to Programmes</a>
+        <div class="eyebrow">Programme 04</div>
+        <h1>Marketing Strategy</h1>
+        <p>Understand customers, markets, value creation, brand positioning, and the choices behind effective marketing.</p>
+      </div>
+    </header>
+
+    <section class="course-content">
+      <div class="container course-layout">
+        <div>
+          <h2>About this programme</h2>
+          <p>Marketing strategy examines how organisations identify customer needs, select target markets, develop value propositions, and build lasting relationships with customers.</p>
+
+          <h2>Key topics</h2>
+          <ul>
+            <li>Marketing principles and strategic planning</li>
+            <li>Consumer behaviour</li>
+            <li>Market research and segmentation</li>
+            <li>Targeting and positioning</li>
+            <li>Products, services, and branding</li>
+            <li>Pricing and distribution</li>
+            <li>Digital marketing and customer relationships</li>
+          </ul>
+
+          <h2>Questions to consider</h2>
+          <ul>
+            <li>How do organisations identify the right customers?</li>
+            <li>What makes a brand distinctive?</li>
+            <li>How can marketing create meaningful customer value?</li>
+          </ul>
+        </div>
+
+        <aside class="course-sidebar">
+          <h3>Suggested starting points</h3>
+          <p>Explore marketing research, consumer behaviour, and brand strategy resources.</p>
+          <p><a href="https://www.hbs.edu/" target="_blank" rel="noopener">Harvard Business School →</a></p>
+          <p><a href="https://mitsloan.mit.edu/" target="_blank" rel="noopener">MIT Sloan →</a></p>
+          <div class="disclaimer">This page provides a programme outline. A complete lesson sequence and assessed activities are not yet published.</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- COURSE: MANAGERIAL ECONOMICS -->
+  <main class="course-page" id="course-economics">
+    <header class="course-hero">
+      <div class="container">
+        <a href="#programmes" class="back-link" onclick="showHome()">← Back to Programmes</a>
+        <div class="eyebrow">Programme 05</div>
+        <h1>Managerial Economics</h1>
+        <p>Apply economic reasoning to business decisions, market behaviour, competition, and the allocation of resources.</p>
+      </div>
+    </header>
+
+    <section class="course-content">
+      <div class="container course-layout">
+        <div>
+          <h2>About this programme</h2>
+          <p>Managerial economics uses economic concepts and analytical tools to help decision-makers understand markets, assess alternatives, and make informed business choices.</p>
+
+          <h2>Key topics</h2>
+          <ul>
+            <li>Economic principles for managers</li>
+            <li>Demand, supply, and market equilibrium</li>
+            <li>Consumer choice and elasticity</li>
+            <li>Production and cost analysis</li>
+            <li>Market structures and competition</li>
+            <li>Pricing and business decisions</li>
+            <li>Economic uncertainty and decision-making</li>
+          </ul>
+
+          <h2>Questions to consider</h2>
+          <ul>
+            <li>How does price elasticity influence business decisions?</li>
+            <li>Why do different market structures produce different outcomes?</li>
+            <li>How can economic analysis improve resource allocation?</li>
+          </ul>
+        </div>
+
+        <aside class="course-sidebar">
+          <h3>Suggested starting points</h3>
+          <p>Explore introductory economics materials and resources on markets and decision-making.</p>
+          <p><a href="https://www.lse.ac.uk/" target="_blank" rel="noopener">London School of Economics →</a></p>
+          <p><a href="https://mitsloan.mit.edu/" target="_blank" rel="noopener">MIT Sloan →</a></p>
+          <div class="disclaimer">This page provides a programme outline. A complete lesson sequence and assessed activities are not yet published.</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- COURSE: CORPORATE GOVERNANCE -->
+  <main class="course-page" id="course-governance">
+    <header class="course-hero">
+      <div class="container">
+        <a href="#programmes" class="back-link" onclick="showHome()">← Back to Programmes</a>
+        <div class="eyebrow">Programme 06</div>
+        <h1>Corporate Governance</h1>
+        <p>Examine accountability, ethical leadership, corporate oversight, and responsible organisational decision-making.</p>
+      </div>
+    </header>
+
+    <section class="course-content">
+      <div class="container course-layout">
+        <div>
+          <h2>About this programme</h2>
+          <p>Corporate governance explores the systems and relationships through which organisations are directed and controlled. It considers the responsibilities of boards, executives, shareholders, and other stakeholders.</p>
+
+          <h2>Key topics</h2>
+          <ul>
+            <li>Principles of corporate governance</li>
+            <li>Boards of directors and their responsibilities</li>
+            <li>Shareholders and stakeholder interests</li>
+            <li>Accountability and transparency</li>
+            <li>Business ethics and responsible leadership</li>
+            <li>Risk management and internal controls</li>
+            <li>Governance, sustainability, and trust</li>
+          </ul>
+
+          <h2>Questions to consider</h2>
+          <ul>
+            <li>Who should be accountable for corporate decisions?</li>
+            <li>How can organisations balance stakeholder interests?</li>
+            <li>Why does transparency matter in business?</li>
+          </ul>
+        </div>
+
+        <aside class="course-sidebar">
+          <h3>Suggested starting points</h3>
+          <p>Explore research and resources on governance, accountability, and business ethics.</p>
+          <p><a href="https://www.oecd.org/" target="_blank" rel="noopener">OECD →</a></p>
+          <p><a href="https://www.hbs.edu/" target="_blank" rel="noopener">Harvard Business School →</a></p>
+          <div class="disclaimer">This page provides a programme outline. A complete lesson sequence and assessed activities are not yet published.</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <div class="footer-brand">Business Academy A1</div>
+          <p class="footer-description">
+            Independent business education. Free learning, open to everyone, everywhere.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about" onclick="showHome()">About</a>
+          <a href="#programmes" onclick="showHome()">Programmes</a>
+          <a href="#reading" onclick="showHome()">Reading Room</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Business Academy A1. All rights reserved.</span>
+        <span>Independent education · Open to everyone</span>
+      </div>
+    </div>
+  </footer>
+
   <script>
-document.getElementById("year").textContent = new Date().getFullYear();
-const toggle = document.querySelector(".menu-toggle");
-const nav = document.getElementById("primary-nav");
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    const open = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", String(!open));
-    nav.classList.toggle("is-open", !open);
-  });
-  nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
-    toggle.setAttribute("aria-expanded", "false");
-    nav.classList.remove("is-open");
-  }));
-}
-</script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("open");
+    }
+
+    function showHome() {
+      document.getElementById("homePage").style.display = "block";
+
+      document.querySelectorAll(".course-page").forEach(function(page) {
+        page.classList.remove("active");
+      });
+
+      document.getElementById("navLinks").classList.remove("open");
+    }
+
+    function showCourse(course) {
+      document.getElementById("homePage").style.display = "none";
+
+      document.querySelectorAll(".course-page").forEach(function(page) {
+        page.classList.remove("active");
+      });
+
+      const selected = document.getElementById("course-" + course);
+
+      if (selected) {
+        selected.classList.add("active");
+      }
+
+      document.getElementById("navLinks").classList.remove("open");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    window.addEventListener("hashchange", function() {
+      if (!window.location.hash.startsWith("#strategic-management") &&
+          !window.location.hash.startsWith("#organisational-behaviour") &&
+          !window.location.hash.startsWith("#corporate-finance") &&
+          !window.location.hash.startsWith("#marketing-strategy") &&
+          !window.location.hash.startsWith("#managerial-economics") &&
+          !window.location.hash.startsWith("#corporate-governance")) {
+        if (window.location.hash === "" || window.location.hash === "#") {
+          showHome();
+        }
+      }
+    });
+  </script>
+
 </body>
 </html>
