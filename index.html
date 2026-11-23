@@ -60,7 +60,25 @@ section{padding:82px 0}.section-label{color:#9b7a43;margin-bottom:14px}.heading{
  <div class="course-body"><div class="container course-columns"><div><div class="panel"><h2>Programme overview</h2><p class="muted" id="courseOverview"></p><div class="notice">Lessons are provided for independent study. Complete each lesson to record your progress. There are no quizzes or multiple-choice tests.</div></div><div class="panel"><h2>Lesson sequence</h2><div id="lessonList"><div class="empty">Loading lessons…</div></div></div><div id="lessonReader"></div></div><aside><div class="panel"><h2>Your progress</h2><div id="courseProgress" class="muted">Sign in and enrol to track your progress.</div><div class="progress-track"><div class="progress-fill" id="courseProgressFill"></div></div><p class="muted" id="progressCount">0 lessons completed</p></div><div class="panel"><h2>Academic foundations</h2><p class="muted">Lessons are designed around established academic concepts and research. Source references are displayed within each lesson when available.</p></div></aside></div></div>
 </section>
 
-<footer class="footer"><div class="container"><div class="footer-row"><div><div class="brand-name" style="color:white">Business Academy A1</div><p class="muted" style="color:#aeb8c5">Independent business education. Open learning for everyone.</p></div><div><a class="nav-link" href="#about">About</a><a class="nav-link" href="#programmes">Programmes</a></div></div><hr style="border:0;border-top:1px solid #ffffff20;margin:25px 0"><small>© <span id="year"></span> Business Academy A1. Independent educational initiative. Certificates issued by the Academy are not university degrees or externally accredited professional qualifications.</small></div></footer>
+<footer class="footer">
+ <div class="container">
+  <div class="footer-row">
+   <div>
+    <div class="brand-name" style="color:white">Business Academy A1</div>
+    <p class="muted" style="color:#aeb8c5">Independent business education. Open learning for everyone.</p>
+   </div>
+   <div>
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#programmes">Programmes</a>
+   </div>
+  </div>
+  <hr style="border:0;border-top:1px solid #ffffff20;margin:25px 0">
+  <small>
+   © <span id="year"></span> Business Academy A1.
+   Where advanced business knowledge meets strategic thinking and real-world application.
+  </small>
+ </div>
+</footer>
 
 <div class="modal" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
  <div class="modal-card"><button class="modal-close" id="authClose" aria-label="Close">×</button><h2 id="authTitle">Create your account</h2><p class="muted" id="authSubtitle">Register to enrol in programmes and save your learning progress.</p>
@@ -124,7 +142,7 @@ section{padding:82px 0}.section-label{color:#9b7a43;margin-bottom:14px}.heading{
   const detailsY=nameBottom+32+(courseLines.length-1)*8+16;pdf.setTextColor(92,101,112);pdf.setFont("helvetica","normal");pdf.setFontSize(10);pdf.text("Date of completion: "+dateText,W/2,detailsY,{align:"center"});
   pdf.setFillColor(...navy);pdf.circle(35,165,13,"F");pdf.setDrawColor(...gold);pdf.setLineWidth(.8);pdf.circle(35,165,11,"S");pdf.setTextColor(...gold);pdf.setFont("times","bold");pdf.setFontSize(8);pdf.text("A1",35,167.5,{align:"center"});
   pdf.setTextColor(...navy);pdf.setFont("times","bold");pdf.setFontSize(10);pdf.text("ACADEMIC DIRECTOR",W-67,160,{align:"center"});pdf.setDrawColor(...gold);pdf.line(W-95,165,W-39,165);pdf.setFont("helvetica","normal");pdf.setFontSize(8);pdf.setTextColor(92,101,112);pdf.text("Business Academy A1",W-67,171,{align:"center"});
-  pdf.setTextColor(105,112,120);pdf.setFont("helvetica","normal");pdf.setFontSize(7);pdf.text("Certificate No. "+certificateNo,W/2,185,{align:"center"});pdf.text("This is an independent Academy certificate, not a university degree or an externally accredited professional qualification.",W/2,191,{align:"center"});
+  pdf.setTextColor(105,112,120);pdf.setFont("helvetica","normal");pdf.setFontSize(7);pdf.text("Certificate No. "+certificateNo,W/2,185,{align:"center"});pdf.text("Recognising the successful completion of an advanced business learning programme.",W/2,191,{align:"center"});
   const safeName=activeCourse.slug||"programme";pdf.save("Business-Academy-A1-Certificate-"+safeName+".pdf");}
  async function enrol(){if(!currentUser){openAuth("signin");return;}if(!activeCourse?.id){showMessage($("courseMessage"),"This programme is not connected to the course database yet.","error");return;}const {error}=await client.from("enrollments").insert({user_id:currentUser.id,course_id:activeCourse.id});if(error&&error.code!=="23505"){showMessage($("courseMessage"),"Enrolment could not be completed: "+error.message,"error");return;}enrolledIds.add(activeCourse.id);$("enrolButton").classList.add("hidden");$("courseDashboard").classList.remove("hidden");showMessage($("courseMessage"),"You are enrolled. Your learning progress will now be saved to your account.","success");renderCourseProgress();renderLessons();}
  async function handleAuth(e){e.preventDefault();hideMessage($("authMessage"));const email=$("email").value.trim(),password=$("password").value,name=$("fullName").value.trim();$("authSubmit").disabled=true;try{if(authMode==="signup"){const {data,error}=await client.auth.signUp({email,password,options:{data:{full_name:name},emailRedirectTo:location.origin+location.pathname}});if(error)throw error;if(data.session){currentUser=data.user;closeAuth();await afterLogin();}else{showMessage($("authMessage"),"Account created. Check your email and confirm your address, then return here to sign in.","success");}}else{const {data,error}=await client.auth.signInWithPassword({email,password});if(error)throw error;currentUser=data.user;closeAuth();await afterLogin();}}catch(err){showMessage($("authMessage"),err.message||"Authentication failed.","error");}finally{$("authSubmit").disabled=false;}}
